@@ -355,7 +355,8 @@ void generate_permutations(int arr[], int start, int n,
                 *avl_height_sq_sum += height * height;
                 printf("This tree is an AVL tree!\n");
             }
-
+            
+            // 完全二分木ならマーク表示
             if (!difference){
                 *complete_count += 1;
                 *complete_height_sum += height;
