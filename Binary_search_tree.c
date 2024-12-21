@@ -353,7 +353,7 @@ void generate_permutations(int arr[], int start, int n,
                 *avl_count += 1;
                 *avl_height_sum += height;
                 *avl_height_sq_sum += height * height;
-                printf("This tree is an AVL tree! (AVL)\n");
+                printf("This tree is an AVL tree!\n");
             }
 
             if (!difference){
@@ -361,6 +361,7 @@ void generate_permutations(int arr[], int start, int n,
                 *complete_height_sum += height;
                 *complete_height_sq_sum += height * height;
                 printf("This tree is a complete binary tree!\r\n");
+                exit(1);
             }
         }
 
