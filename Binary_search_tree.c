@@ -362,7 +362,7 @@ void generate_permutations(int arr[], int start, int n,
                 *complete_height_sum += height;
                 *complete_height_sq_sum += height * height;
                 printf("This tree is a complete binary tree!\r\n");
-                exit(1);
+                //exit(1);
             }
         }
 
