@@ -412,7 +412,9 @@ int main() {
     int complete_count = 0;
     int total_permutations = 0;
 
-    generate_permutations(arr, 0, n, &height_sum, &height_sq_sum, &unique_count, &total_permutations, &avl_height_sum, &avl_height_sq_sum, &avl_count, &complete_height_sum, &complete_height_sq_sum, &complete_count);
+    generate_permutations(arr, 0, n, &height_sum, &height_sq_sum, &unique_count, &total_permutations, 
+                        &avl_height_sum, &avl_height_sq_sum, &avl_count, 
+                        &complete_height_sum, &complete_height_sq_sum, &complete_count);
 
     double mean_height = height_sum / unique_count;
     double variance_height = (height_sq_sum / unique_count) - (mean_height * mean_height);
